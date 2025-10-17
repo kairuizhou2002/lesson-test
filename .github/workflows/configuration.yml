@@ -87,7 +87,7 @@ jobs:
     - name: Test with Maven
 
       run: mvn -B test --file pom.xml
-=======
+
 name: Java CI with Maven
 
 on:
@@ -177,4 +177,4 @@ jobs:
     - name: Test with Maven
 
       run: mvn -B test --file pom.xml
->>>>>>> Stashed changes
+
