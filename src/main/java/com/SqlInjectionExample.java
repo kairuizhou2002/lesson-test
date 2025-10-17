@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class SqlInjectionExample {
- 
+   /*
     public void doLogin(String user, String pass) {
         Connection conn = null;
         Statement stmt = null;
@@ -43,7 +43,7 @@ public class SqlInjectionExample {
             }
         }
     }
-    /*
+    */
     public void doLogin(String user, String pass) {
         Connection conn = null;
         PreparedStatement pstmt = null;
@@ -81,5 +81,5 @@ public class SqlInjectionExample {
                 se.printStackTrace();
             }
         }
-    }*/
+    }
 }
