@@ -42,7 +42,7 @@ jobs:
         languages: ${{ matrix.language }}
         
         # queries: security-extended,security-and-quality,./.github/codeql/queries/
-        queries: ./.github/codeql/queries/customize
+        queries: ./.github/codeql/queries/customize,security-extended,security-and-quality
         # config-file: .github/codeql/codeql-config.yml # 指定配置文件的路径
         
 
@@ -85,4 +85,5 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Test with Maven
+
       run: mvn -B test --file pom.xml
